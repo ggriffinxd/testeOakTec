@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Produto</title>
+  <link rel="stylesheet" href="../../styles/style.css">
+  <script src="../index.js" defer></script>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Cadastro de Produto</h1>
+    <form id="productForm">
+      <label for="productName">Nome do produto:</label><br>
+      <input type="text" id="productName" name="productName" required><br><br>
+
+      <label for="productDescription">Descrição do produto:</label><br>
+      <input type="text" id="productDescription" name="productDescription" required><br><br>
+
+      <label for="productValue">Valor do produto:</label><br>
+      <input type="number" id="productValue" name="productValue" step="0.01" required><br><br>
+
+      <div class="radio-group">
+        <label for="available">Disponível para venda:</label><br>
+        <input type="radio" id="availableYes" name="available" value="Sim" required>
+        <label for="availableYes">Sim</label>
+        <input type="radio" id="availableNo" name="available" value="Não">
+        <label for="availableNo">Não</label>
+      </div>
+
+      <button type="submit" id="submitButton">Enviar</button>
+    </form>
+  </div>
+</body>
+
+</html>
